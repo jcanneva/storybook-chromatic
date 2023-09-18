@@ -1,10 +1,11 @@
 <h1 align="center">
-  Chromatic's and Storybook Vite React template
+  Storybook and React POC with Chromatic CI
 </h1>
 
-This template ships with the main React and Storybook configuration files you'll need to get up and running fast.
+This POC shows how to use React and Storybook adding it CI with Chromatic.
+See deploy [here](https://main--65079b0e0dd1e8cb6f51654a.chromatic.com/) and the github actions [here](https://github.com/jcanneva/storybook-chromatic/actions).
 
-## 🚅 Quick start
+## Quick start
 
 1.  **Create the application.**
 

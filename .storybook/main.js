@@ -12,17 +12,6 @@ const config = {
         name: "@storybook/react-vite",
         options: {},
     },
-    /*features: {
-      legacyMdx1: true, // 👈 Enables MDX v1 support
-    },*/
-    async viteFinal(_config) {
-        // Merge custom configuration into the default config
-        return mergeConfig(_config, {
-            optimizeDeps: {
-                include: ["storybook-addon-designs"],
-            },
-        });
-    },
     docs: {
         autodocs: "tag",
     },
