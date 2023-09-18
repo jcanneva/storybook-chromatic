@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    /*Base Options*/
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "target": "ES2017",
+    "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "diagnostics": false,
+    "newLine": "lf",
+    "removeComments": true,
+
+    /*Strictness*/
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "allowUmdGlobalAccess": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "allowSyntheticDefaultImports": true,
+    "disableSizeLimit": false,
+    "downlevelIteration": false,
+    "experimentalDecorators": false,
+    "importsNotUsedAsValues": "remove",
+    "keyofStringsOnly": false,
+    "useDefineForClassFields": false,
+    "noFallthroughCasesInSwitch": true,
+    /*Module*/
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "maxNodeModuleJsDepth": 0,
+    "isolatedModules": true,
+
+    "lib": ["esnext", "ES2017", "DOM"],
+  
+    "baseUrl": "src",
+    "paths": {
+    },
+    "incremental": true,
+    "jsx": "preserve"
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "storybook-static",
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "ds",
+  "version": "0.0.1",
+  "description": "poc design system with react, typescript, storybook and chromatic",
+  "author": {
+    "name": "jcanneva"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "clean:ds": "del yarn.lock && rmdir /s /q node_modules || echo ''",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "1",
+    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-interactions": "^7.4.2",
+    "@storybook/addon-links": "^7.4.2",
+    "@storybook/blocks": "^7.4.2",
+    "@storybook/react": "^7.4.2",
+    "@storybook/react-vite": "^7.4.2",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/node": "^16.0.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "msw": "^1.2.1",
+    "msw-storybook-addon": "^1.8.0",
+    "prettier": "^3.0.3",
+    "storybook": "^7.4.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.2.0"
+  }
+}
