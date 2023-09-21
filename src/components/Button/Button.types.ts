@@ -1,5 +1,3 @@
-import type { CSSProperties } from "react";
-
 export type Props = {
     /**
      * Is this the principal call to action on the page?
@@ -12,7 +10,7 @@ export type Props = {
     /**
      * How large should the button be?
      */
-    size: "small" | "medium" | "large";
+    size?: "small" | "medium" | "large";
     /**
      * Button contents
      */
