@@ -1,6 +1,6 @@
-import { mergeConfig } from 'vite';
+import type { StorybookConfig } from "@storybook/react-vite";
 
-const config = {
+const config: StorybookConfig = {
     stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
     staticDirs: ["../public"],
     addons: [
@@ -8,6 +8,9 @@ const config = {
         "@storybook/addon-essentials",
         "@storybook/addon-interactions",
     ],
+    typescript: {
+        check: true,
+    },
     framework: {
         name: "@storybook/react-vite",
         options: {},

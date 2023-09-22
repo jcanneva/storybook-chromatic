@@ -17,6 +17,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "test-storybook": "test-storybook",
     "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "devDependencies": {
@@ -26,10 +27,12 @@
     "@storybook/blocks": "^7.4.2",
     "@storybook/react": "^7.4.2",
     "@storybook/react-vite": "^7.4.2",
+    "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.0.14-next.2",
-    "@types/node": "^16.0.0",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
+    "@types/babel__core": "^7.20.0",
+    "@types/node": "^16.18.34",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
     "@vitejs/plugin-react": "^3.1.0",
     "chromatic": "^7.1.0",
     "eslint": "^8.49.0",
@@ -37,13 +40,9 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "msw": "^1.2.1",
-    "msw-storybook-addon": "^1.8.0",
     "prettier": "^3.0.3",
     "storybook": "^7.4.2",
     "typescript": "^5.2.2",
-    "vite": "^4.2.0"
-  },
-  "readme": "ERROR: No README data found!",
-  "_id": "ds@0.0.1"
+    "vite": "^4.3.9"
+  }
 }
