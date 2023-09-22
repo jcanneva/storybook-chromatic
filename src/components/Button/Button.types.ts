@@ -6,7 +6,7 @@ export type Props = {
     /**
      * What background color to use
      */
-    backgroundColor?: string
+    backgroundColor?: string;
     /**
      * How large should the button be?
      */

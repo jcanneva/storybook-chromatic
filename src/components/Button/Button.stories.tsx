@@ -8,7 +8,7 @@ const meta: Meta<typeof Button> = {
     component: Button,
     tags: ["autodocs"],
     decorators: [
-        (Story) => (
+        Story => (
             <div
                 style={{
                     display: "flex",
@@ -69,9 +69,9 @@ export const WithOnClick: Story = {
         label: "Button with onClick prop",
         onClick: () => alert("Button clicked"),
     },
-    play: async ({ canvasElement }) => {
+    play: ({ canvasElement }) => {
         const canvas = within(canvasElement);
 
-        await userEvent.click(canvas.getByRole("button"));
+        userEvent.click(canvas.getByRole("button"));
     },
 };
