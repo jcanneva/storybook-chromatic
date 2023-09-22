@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type ReactElement } from "react";
 import "./Button.css";
 import type { Props } from "./Button.types";
 
@@ -9,7 +9,7 @@ export const Button = ({
     size = "medium",
     label,
     ...props
-}: Props) => {
+}: Props): ReactElement => {
     const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
     return (
         <button

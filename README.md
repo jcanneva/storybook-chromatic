@@ -2,7 +2,7 @@
   Storybook and React POC with Chromatic CI
 </h1>
 
-This POC shows how to use React and Storybook adding it CI with Chromatic.
+This POC shows how to use React and Storybook adding it CI with Chromatic.\
 See deploy [here](https://main--65079b0e0dd1e8cb6f51654a.chromatic.com/) and the github actions [here](https://github.com/jcanneva/storybook-chromatic/actions).
 
 ## Quick start
@@ -26,9 +26,15 @@ See deploy [here](https://main--65079b0e0dd1e8cb6f51654a.chromatic.com/) and the
     yarn
     ```
 
-3.  **Open the source code and start editing!**
+3.  **Open the source code and start editing the source code**
 
-    Open the root directory in your code editor and build a component
+    Open the root directory in your code editor and create a component
+
+    ```shell
+
+    # You can create a new component with the following command
+    yarn create:component componentName
+    ```
 
 4.  **Browse your stories!**
 

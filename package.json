@@ -12,6 +12,8 @@
   },
   "scripts": {
     "clean:ds": "del yarn.lock && rmdir /s /q node_modules || echo ''",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --quiet --fix",
+    "create:component": "node .scaffold/createComponent/index",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
