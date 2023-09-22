@@ -2,8 +2,10 @@ import React from "react";
 import "./Button.css";
 import type { Props } from "./Button.types";
 
+
+/** Primary UI component for user interaction */
 export const Button = ({
-    primary = false,
+    primary = true,
     backgroundColor = undefined,
     size = "medium",
     label,

@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { fireEvent, userEvent, within } from '@storybook/testing-library';
+import { userEvent, within } from "@storybook/testing-library";
 import { Button } from "./Button";
 
 const meta: Meta<typeof Button> = {
@@ -9,18 +9,25 @@ const meta: Meta<typeof Button> = {
     tags: ["autodocs"],
     decorators: [
         (Story) => (
-          <div style={{ display: 'flex', width: 100+"%", justifyContent: "center", alignItems: "center" }}>
-            <Story />
-          </div>
+            <div
+                style={{
+                    display: "flex",
+                    width: 100 + "%",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}>
+                <Story />
+            </div>
         ),
-      ],
-    
+    ],
+
     argTypes: {
         backgroundColor: { control: "color" },
         size: { control: { type: "inline-radio" } },
     },
     args: {
         size: "medium",
+        onClick: undefined,
     },
 };
 
@@ -28,19 +35,14 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Default: Story = {
-    args: {
-        label: "Button Default",
-    },
-};
-
+/** Primary button whit prop primary true*/
 export const Primary: Story = {
     args: {
-        primary: true,
         label: "Button Primary",
     },
 };
 
+/** Secondary button whit prop primary false*/
 export const Secondary: Story = {
     args: {
         primary: false,
@@ -64,13 +66,12 @@ export const Small: Story = {
 
 export const WithOnClick: Story = {
     args: {
-        primary: false,
         label: "Button with onClick prop",
+        onClick: () => alert("Button clicked"),
     },
     play: async ({ canvasElement }) => {
         const canvas = within(canvasElement);
-    
-        // See https://storybook.js.org/docs/react/essentials/actions#automatically-matching-args to learn how to setup logging in the Actions panel
-        await userEvent.click(canvas.getByRole('button'));
-      },
+
+        await userEvent.click(canvas.getByRole("button"));
+    },
 };
