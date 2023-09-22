@@ -1,12 +1,9 @@
 # .github/workflows/build&test.yml
 
 # Build and Test
-name: "Build and test for all branches making a PR"
+name: "Build and test for any new commit"
 
-on:
-    pull_request:
-        branches:
-            - "*"
+on: push
 
 jobs:
     build-test:
