@@ -3,7 +3,7 @@ import "./Button.css";
 import type { Props } from "./Button.types";
 
 /** Primary UI component for user interaction */
-export const Button = ({
+const Button = ({
     primary = true,
     backgroundColor = undefined,
     size = "medium",

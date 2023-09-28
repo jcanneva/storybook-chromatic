@@ -5,7 +5,7 @@ import "./${componentName}.css";
 import type { Props } from "./${componentName}.types";
 
 /** JSDocs for autodocs */
-export const ${componentName} = ({ className, ...props }: Props): ReactElement => (
+const ${componentName} = ({ className, ...props }: Props): ReactElement => (
     <div className={className} {...props} />
 );
 

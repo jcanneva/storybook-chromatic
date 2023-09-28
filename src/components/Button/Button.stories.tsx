@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { userEvent, within } from "@storybook/testing-library";
-import { Button } from "./Button";
+import Button from "./Button";
 
 const meta: Meta<typeof Button> = {
     title: "Components/Button",
