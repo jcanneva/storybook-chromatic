@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export type Props = {
     /**
      * Is this the principal call to action on the page?
@@ -14,7 +16,7 @@ export type Props = {
     /**
      * Button contents
      */
-    label: string;
+    label: ReactNode;
     /**
      * Optional click handler
      */

@@ -7,7 +7,7 @@ const Button = ({
     primary = true,
     backgroundColor = undefined,
     size = "medium",
-    label,
+    label: children,
     ...props
 }: Props): ReactElement => {
     const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
@@ -17,7 +17,7 @@ const Button = ({
             className={["storybook-button", `storybook-button--${size}`, mode].join(" ")}
             {...(backgroundColor && { style: { background: backgroundColor } })}
             {...props}>
-            {label}
+            {children}
         </button>
     );
 };
